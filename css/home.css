@@ -16,6 +16,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
   font-family: "Cera Round Pro";
   src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-bold.otf);
@@ -359,10 +362,250 @@
   padding: 80px 0 40px;
 }
 
+@font-face {
+  font-family: "Cera Round Pro";
+  src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-bold.otf);
+}
+@font-face {
+  font-family: "Cera Round Pro";
+  src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-light.otf);
+}
+@font-face {
+  font-family: "Cera Round Pro";
+  src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-medium.otf);
+}
+@font-face {
+  font-family: "Cera Round Pro";
+  src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-regular.otf);
+}
+@font-face {
+  font-family: "Cera Round Pro";
+  src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-thin.otf);
+}
+.backtop {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: cadetblue;
+  border-radius: 50%;
+}
+.backtop:hover {
+  background-color: rgb(22, 21, 21);
+}
+.backtop a {
+  color: white;
+}
+
 * {
   scroll-behavior: smooth;
   font-style: normal;
 }
 * a {
   text-decoration: none;
+}
+
+#home {
+  padding-top: 150px;
+  background: #e5e5e5;
+}
+#home .title h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  color: #bdb7b7;
+}
+#home .title h3 span {
+  padding-left: 10px;
+  color: #BB2339;
+  border-left: 2px solid #bdb7b7;
+}
+#home .row1 {
+  padding: 70px 0 200px;
+}
+#home .row1 .regular_menu {
+  background-color: #BB2339;
+  height: 800px;
+  border-radius: 20px;
+}
+#home .row1 .regular_menu h2 {
+  font-family: "Cera Round Pro";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 54px;
+  color: #ffffff;
+}
+#home .row1 .regular_menu ul {
+  list-style-type: none;
+}
+#home .row1 .regular_menu ul li {
+  padding: 20px 0;
+}
+#home .row1 .regular_menu ul li a {
+  color: #242424;
+  text-transform: capitalize;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  line-height: 175%;
+  font-style: normal;
+  border: 1px solid #BB2339;
+  border-radius: 100px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 600;
+  border: 1px solid white;
+  padding: 10px 30px;
+}
+#home .row1 .regular_menu ul li a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+#home .row1 .regular_menu ul li .all {
+  background-color: #ffffff;
+  color: black;
+}
+#home .row1 .menu_list .row .shashlik {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(36, 36, 36, 0.1);
+  border-radius: 14px;
+}
+#home .row1 .menu_list .row .shashlik img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#home .row1 .menu_list .row .shashlik_script p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #242424;
+  padding: 20px 0 30px;
+}
+#home .row1 .menu_list .row .shashlik_script h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: #bb2339;
+}
+#home .gallery {
+  background-color: #f4f4f4;
+  padding: 130px 0;
+}
+@media screen and (max-width: 768px) {
+  #home .gallery .row {
+    flex-direction: column-reverse;
+  }
+}
+#home .gallery .row .gallery_left h5 {
+  color: #242424;
+  font-family: "Cera Round Pro";
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+}
+#home .gallery .row .gallery_left h2 {
+  font-family: "Cera Round Pro";
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #242424;
+}
+#home .gallery .row .gallery_left p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #aaaaaa;
+  padding: 24px 0;
+}
+#home .gallery .row .gallery_left a {
+  color: #242424;
+  text-transform: capitalize;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  line-height: 175%;
+  font-style: normal;
+  border: 1px solid #BB2339;
+  border-radius: 100px;
+  padding: 8px 32px;
+  font-weight: 700;
+}
+#home .gallery .row .gallery_left a:hover {
+  color: white;
+  background-color: #BB2339;
+}
+#home .gallery .row .gallery_right .owl-theme .owl-dots {
+  display: none;
+}
+#home .gallery .row .gallery_right .owl-theme .owl-nav {
+  display: none;
+}
+#home .gallery .row .gallery_right .owl-theme .item1 {
+  position: relative;
+  width: 301px;
+  height: 450px;
+  background-image: url(../../images/index/egg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+#home .gallery .row .gallery_right .owl-theme .item1:hover .overlay {
+  opacity: 0.8;
+}
+#home .gallery .row .gallery_right .owl-theme .item2 {
+  position: relative;
+  width: 301px;
+  height: 450px;
+  background-image: url(../../images/index/kimchi.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+#home .gallery .row .gallery_right .owl-theme .item2:hover .overlay {
+  opacity: 0.8;
+}
+#home .gallery .row .gallery_right .owl-theme .item3 {
+  position: relative;
+  width: 301px;
+  height: 450px;
+  background-image: url(../../images/index/download.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+#home .gallery .row .gallery_right .owl-theme .item3:hover .overlay {
+  opacity: 0.8;
+}
+#home .gallery .row .gallery_right .owl-theme .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 15px;
+  opacity: 0;
+}
+#home .gallery .row .gallery_right .owl-theme .overlay img {
+  width: 43px;
+  height: 43px;
 }/*# sourceMappingURL=home.css.map */

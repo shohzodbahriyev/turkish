@@ -1,1 +1,212 @@
 @import "../global.scss";
+
+#home {
+  padding-top: 150px;
+  background: #e5e5e5;
+  .title {
+    h3 {
+      font-family: $font-family-opensans;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 19px;
+      color: #bdb7b7;
+      span {
+        padding-left: 10px;
+        color: $color;
+        border-left: 2px solid #bdb7b7;
+      }
+    }
+  }
+
+  .row1 {
+    padding: 70px 0 200px;
+    .regular_menu {
+      background-color: $color;
+      height: 800px;
+      border-radius: 20px;
+      h2 {
+        font-family: $font-family-cera;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 54px;
+        color: #ffffff;
+      }
+      ul {
+        list-style-type: none;
+        li {
+          padding: 20px 0;
+
+          a {
+            @include btn;
+            font-family: $font-family-opensans;
+            color: white;
+            font-weight: 600;
+            border: 1px solid white;
+            padding: 10px 30px;
+            &:hover {
+              background-color: #ffffff;
+              color: black;
+            }
+          }
+          .all {
+            background-color: #ffffff;
+            color: black;
+          }
+        }
+      }
+    }
+
+    .menu_list {
+      .row {
+        .shashlik {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 30px;
+          background: #ffffff;
+          border: 1px solid rgba(36, 36, 36, 0.1);
+          border-radius: 14px;
+          img {
+            object-fit: cover;
+          }
+          &_script {
+            p {
+              font-family: $font-family-opensans;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 30px;
+              text-align: center;
+              color: #242424;
+              padding: 20px 0 30px;
+            }
+            h3 {
+              font-family: $font-family-opensans;
+              font-weight: 700;
+              font-size: 28px;
+              line-height: 38px;
+              text-align: center;
+              color: #bb2339;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .gallery {
+    // margin-top: 120px;
+    background-color: #f4f4f4;
+    padding: 130px 0;
+    .row {
+      @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+      }
+      .gallery_left {
+        h5 {
+          color: #242424;
+          font-family: $font-family-cera;
+          font-weight: bold;
+          font-size: 23px;
+          line-height: 130%;
+          letter-spacing: 0.04em;
+        }
+        h2 {
+          font-family: $font-family-cera;
+          font-weight: 900;
+          font-size: 48px;
+          line-height: 130%;
+          letter-spacing: 0.03em;
+          text-transform: capitalize;
+          color: #242424;
+        }
+        p {
+          font-family: $font-family-opensans;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 175%;
+          letter-spacing: 0.04em;
+          color: #aaaaaa;
+          padding: 24px 0;
+        }
+        a {
+          @include btn;
+          padding: 8px 32px;
+          font-weight: 700;
+          &:hover {
+            color: white;
+            background-color: $color;
+          }
+        }
+      }
+      .gallery_right {
+        .owl-theme .owl-dots {
+          display: none;
+        }
+        .owl-theme .owl-nav {
+          display: none;
+        }
+        .owl-theme {
+          .item1 {
+            position: relative;
+            width: 301px;
+            height: 450px;
+            background-image: url(../../images/index/egg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: 0.5s;
+            &:hover {
+              .overlay {
+                opacity: 0.8;
+              }
+            }
+          }
+          .item2 {
+            position: relative;
+            width: 301px;
+            height: 450px;
+            background-image: url(../../images/index/kimchi.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: 0.5s;
+            &:hover {
+              .overlay {
+                opacity: 0.8;
+              }
+            }
+          }
+          .item3 {
+            position: relative;
+            width: 301px;
+            height: 450px;
+            background-image: url(../../images/index/download.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: 0.5s;
+            &:hover {
+              .overlay {
+                opacity: 0.8;
+              }
+            }
+          }
+          .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            border-radius: 15px;
+            opacity: 0;
+            img {
+              width: 43px;
+              height: 43px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
