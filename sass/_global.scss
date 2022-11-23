@@ -1,0 +1,13 @@
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./base/typography";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+* {
+  scroll-behavior: smooth;
+  font-style: normal;
+  a {
+    text-decoration: none;
+  }
+}

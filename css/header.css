@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: "Cera Round Pro";
+  src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-bold.otf);
+}
+@font-face {
+  font-family: "Cera Round Pro";
+  src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-light.otf);
+}
+@font-face {
+  font-family: "Cera Round Pro";
+  src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-medium.otf);
+}
+@font-face {
+  font-family: "Cera Round Pro";
+  src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-regular.otf);
+}
+@font-face {
+  font-family: "Cera Round Pro";
+  src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-thin.otf);
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #bb2339;
+  padding: 20px 0;
+  z-index: 10;
+}
+
+.navbar-shrink {
+  padding: 10px 0;
+  box-shadow: 0 2px 10px 5px rgb(240, 140, 140);
+}
+
+.offcanvas-body {
+  background-color: #bb2339;
+}
+.offcanvas-body .btn {
+  color: white;
+  border-radius: 100px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+}
+.offcanvas-body .btn:hover {
+  color: #BB2339;
+  background-color: white;
+}
+.offcanvas-body a {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+}
+.offcanvas-body a:hover {
+  border-bottom: 1px solid white;
+}
+@media screen and (max-width: 992px) {
+  .offcanvas-body a:hover {
+    border-bottom: 1px solid white;
+  }
+  .offcanvas-body .btn {
+    margin-top: 15px;
+  }
+}
+
+.dropdown-menu li .dropdown-item:hover {
+  border-bottom: 1px solid blue;
+  color: blue;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,160 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.footer {
+  position: relative;
+  margin-top: 340px;
+  padding-top: 180px;
+  background-color: $color;
+  bottom: 0;
+  color: #ffffff;
+  .newsletter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -220px;
+    // transform: translateY(-220px);
+    background: #bb2339;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+    border-radius: 20px;
+    padding: 64px 0;
+    h5 {
+      font-family: $font-family-cera;
+      font-weight: 900;
+      font-size: 23px;
+      line-height: 130%;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+    h1 {
+      font-family: $font-family-cera;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 130%;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: capitalize;
+      color: #ffffff;
+      padding: 25px 0;
+    }
+    p {
+      font-family: $font-family-opensans;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      padding-bottom: 64px;
+    }
+    .joining {
+      text-align: center;
+
+      input {
+        width: 635px;
+        border: 1px solid rgba(245, 239, 219, 0.5);
+        border-radius: 100px;
+        background-color: transparent;
+        padding: 12px 20px;
+        color: white;
+        margin-right: 32px;
+        &:focus {
+          outline: none;
+        }
+        @media screen and (max-width: 992px) {
+          margin-bottom: 20px;
+        }
+        @media screen and (max-width: 780px) {
+          margin-right: 0;
+          margin-bottom: 20px;
+          width: 100%;
+        }
+      }
+      a {
+        font-family: $font-family-cera;
+        @include btn;
+        color: white;
+        font-weight: 900;
+        border: 1px solid #ffffff;
+        border-radius: 100px;
+        padding: 12px 32px;
+        &:hover {
+          color: $color;
+          background-color: white;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .row {
+    padding: 150px 0 40px;
+    @media screen and (max-width: 992px) {
+      gap: 40px;
+    }
+    div:first-child {
+      @media screen and (max-width: 992px) {
+        order: 1;
+      }
+    }
+    div:last-child {
+      @media screen and (max-width: 992px) {
+        order: 2;
+      }
+    }
+    div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h3 {
+        font-family: $font-family-cera;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 130%;
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+      }
+      p {
+        font-family: $font-family-opensans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.04em;
+      }
+    }
+    .footer_logo {
+      img {
+        margin-top: -30px;
+        @media screen and (max-width:768px) {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    a {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .pop {
+    font-family: $font-family-opensans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 80px 0 40px;
+  }
+}

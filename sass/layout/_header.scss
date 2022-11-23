@@ -1,0 +1,67 @@
+@import "../utils/variables";
+
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #bb2339;
+  padding: 20px 0;
+  z-index: 10;
+  transition: 0.5s;
+}
+
+.navbar-shrink {
+  padding: 10px 0;
+  box-shadow: 0 2px 10px 5px rgb(240, 140, 140);
+}
+
+.offcanvas-body {
+  background-color: #bb2339;
+  .btn {
+    color: white;
+    border-radius: 100px;
+    font-family: $font-family-opensans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    &:hover {
+      color: $color;
+      background-color: white;
+    }
+  }
+  a {
+    font-family: $font-family-opensans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    a {
+      &:hover {
+        border-bottom: 1px solid white;
+      }
+    }
+    .btn {
+      margin-top: 15px;
+    }
+  }
+}
+
+.dropdown-menu {
+  li {
+    .dropdown-item {
+      &:hover {
+        border-bottom: 1px solid blue;
+        color: blue;
+      }
+    }
+  }
+}

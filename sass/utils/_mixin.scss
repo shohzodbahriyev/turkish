@@ -1,0 +1,12 @@
+@import "./variables";
+
+@mixin btn {
+  color: #242424;
+  text-transform: capitalize;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  line-height: 175%;
+  font-style: normal;
+  border: 1px solid $color;
+  border-radius: 100px;
+}
