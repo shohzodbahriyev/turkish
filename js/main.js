@@ -43,3 +43,10 @@ function scrollFunction() {
     document.getElementById("navbar").classList.remove("navbar-shrink");
   }
 }
+
+function opanNavbar(){
+  document.getElementById("offcanvasDarkNavbar").style.left = "0";
+}
+function opanNavbar() {
+  document.getElementById("offcanvasDarkNavbar").style.left = "-100%";
+}
