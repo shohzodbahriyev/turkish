@@ -258,6 +258,10 @@
         // width: calc(33% - 10px);
         padding: 30px 20px;
         margin: 15px 0;
+        transition: 0.5s;
+        &:hover{
+            transform: rotateZ(-5deg);
+          }
         h2 {
           font-family: $font-family-inter;
           color: #333333;
@@ -321,6 +325,9 @@
         border: 1px solid rgba(36, 36, 36, 0.1);
         border-radius: 14px;
         background-color: #fff;
+        img{
+          width: 100%;
+        }
         .text {
           padding: 20px 30px;
           h3 {

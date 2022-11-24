@@ -157,6 +157,18 @@
   color: blue;
 }
 
+.navbar-toggler {
+  border: 2px solid white;
+}
+.navbar-toggler:hover {
+  box-shadow: 0 0 5px 5px rgb(218, 152, 152);
+}
+
+.offcanvas.offcanvas-end {
+  left: 0;
+  width: 100%;
+}
+
 @font-face {
   font-family: "Cera Round Pro";
   src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-bold.otf);
@@ -677,6 +689,10 @@
 #main .testimony .row .statik {
   padding: 30px 20px;
   margin: 15px 0;
+  transition: 0.5s;
+}
+#main .testimony .row .statik:hover {
+  transform: rotateZ(-5deg);
 }
 #main .testimony .row .statik h2 {
   font-family: "Inter", sans-serif;
@@ -735,6 +751,9 @@
   border: 1px solid rgba(36, 36, 36, 0.1);
   border-radius: 14px;
   background-color: #fff;
+}
+#main #news .row .box img {
+  width: 100%;
 }
 #main #news .row .box .text {
   padding: 20px 30px;

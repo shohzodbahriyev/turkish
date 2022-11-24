@@ -65,3 +65,19 @@
     }
   }
 }
+
+.navbar-toggler{
+  border: 2px solid white;
+  &:hover{
+    box-shadow: 0 0 5px 5px rgb(218, 152, 152);
+  }
+}
+
+.offcanvas.offcanvas-end {
+  left: 0;
+  width: 100%;
+}
+
+.offcanvas{
+
+}

@@ -157,6 +157,18 @@
   color: blue;
 }
 
+.navbar-toggler {
+  border: 2px solid white;
+}
+.navbar-toggler:hover {
+  box-shadow: 0 0 5px 5px rgb(218, 152, 152);
+}
+
+.offcanvas.offcanvas-end {
+  left: 0;
+  width: 100%;
+}
+
 @font-face {
   font-family: "Cera Round Pro";
   src: url(../../fonts/Demo_fonts/Fontspring-DEMO-ceraroundpro-bold.otf);
