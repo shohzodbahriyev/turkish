@@ -476,9 +476,16 @@
   border: 1px solid rgba(36, 36, 36, 0.1);
   border-radius: 14px;
 }
+#home .row1 .menu_list .row .shashlik:hover {
+  box-shadow: 0 2px 5px 4px rgb(230, 115, 115);
+}
 #home .row1 .menu_list .row .shashlik img {
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.5s;
+}
+#home .row1 .menu_list .row .shashlik img:hover {
+  transform: scale(1.1);
 }
 #home .row1 .menu_list .row .shashlik_script p {
   font-family: "Open Sans", sans-serif;
@@ -561,9 +568,9 @@
   background-image: url(../../images/index/egg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  transition: 0.5s;
 }
 #home .gallery .row .gallery_right .owl-theme .item1:hover .overlay {
+  transition: 0.5s;
   opacity: 0.8;
 }
 #home .gallery .row .gallery_right .owl-theme .item2 {
@@ -573,9 +580,9 @@
   background-image: url(../../images/index/kimchi.png);
   background-size: cover;
   background-repeat: no-repeat;
-  transition: 0.5s;
 }
 #home .gallery .row .gallery_right .owl-theme .item2:hover .overlay {
+  transition: 0.5s;
   opacity: 0.8;
 }
 #home .gallery .row .gallery_right .owl-theme .item3 {
@@ -585,9 +592,9 @@
   background-image: url(../../images/index/download.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  transition: 0.5s;
 }
 #home .gallery .row .gallery_right .owl-theme .item3:hover .overlay {
+  transition: 0.5s;
   opacity: 0.8;
 }
 #home .gallery .row .gallery_right .owl-theme .overlay {

@@ -66,8 +66,15 @@
           background: #ffffff;
           border: 1px solid rgba(36, 36, 36, 0.1);
           border-radius: 14px;
+          &:hover {
+            box-shadow: 0 2px 5px 4px rgb(230, 115, 115);
+          }
           img {
             object-fit: cover;
+            transition: 0.5s;
+            &:hover{
+              transform: scale(1.1);
+            }
           }
           &_script {
             p {
@@ -153,9 +160,10 @@
             background-image: url(../../images/index/egg.png);
             background-size: cover;
             background-repeat: no-repeat;
-            transition: 0.5s;
+
             &:hover {
               .overlay {
+                transition: 0.5s;
                 opacity: 0.8;
               }
             }
@@ -167,9 +175,10 @@
             background-image: url(../../images/index/kimchi.png);
             background-size: cover;
             background-repeat: no-repeat;
-            transition: 0.5s;
+
             &:hover {
               .overlay {
+                transition: 0.5s;
                 opacity: 0.8;
               }
             }
@@ -181,9 +190,10 @@
             background-image: url(../../images/index/download.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            transition: 0.5s;
+
             &:hover {
               .overlay {
+                transition: 0.5s;
                 opacity: 0.8;
               }
             }

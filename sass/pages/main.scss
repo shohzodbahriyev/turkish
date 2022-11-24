@@ -174,7 +174,7 @@
         align-items: center;
         padding: 5px 15px;
         font-family: $font-family-opensans;
-        &:hover{
+        &:hover {
           color: white;
           background-color: $color;
         }
@@ -194,10 +194,17 @@
         justify-content: center;
         border: 1px solid rgba(36, 36, 36, 0.1);
         border-radius: 14px;
+        &:hover {
+          box-shadow: 0 2px 5px 4px rgb(161, 149, 218);
+        }
         .card_body {
           img {
             width: 100%;
             object-fit: cover;
+            transition: 0.5s;
+            &:hover{
+              transform: scale(0.5);
+            }
           }
           p {
             font-family: $font-family-opensans;
@@ -417,121 +424,124 @@
     margin-top: 120px;
     background-color: #f4f4f4;
     padding: 130px 0;
-    .row{
-      @media screen and (max-width:768px) {
+    .row {
+      @media screen and (max-width: 768px) {
         flex-direction: column-reverse;
       }
       .gallery_left {
-      h5 {
-        color: #242424;
-        font-family: $font-family-cera;
-        font-weight: bold;
-        font-size: 23px;
-        line-height: 130%;
-        letter-spacing: 0.04em;
-      }
-      h2 {
-        font-family: $font-family-cera;
-        font-weight: 900;
-        font-size: 48px;
-        line-height: 130%;
-        letter-spacing: 0.03em;
-        text-transform: capitalize;
-        color: #242424;
-      }
-      p {
-        font-family: $font-family-opensans;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 175%;
-        letter-spacing: 0.04em;
-        color: #aaaaaa;
-        padding: 24px 0;
-      }
-      a {
-        @include btn;
-        padding: 8px 32px;
-        font-weight: 700;
-        &:hover {
-          color: white;
-          background-color: $color;
+        h5 {
+          color: #242424;
+          font-family: $font-family-cera;
+          font-weight: bold;
+          font-size: 23px;
+          line-height: 130%;
+          letter-spacing: 0.04em;
         }
-      }
-    }
-    .gallery_right {
-      overflow-x: hidden;
-      .owl-carousel {
-        width: 1200px;
-        // gap: 20px;
-      }
-      .owl-theme {
-        .item1 {
-          position: relative;
-          width: 301px;
-          height: 450px;
-          background-image: url(../../images/index/egg.png);
-          background-size: cover;
-          background-repeat: no-repeat;
-          transition: 0.5s;
-          &:hover {
-            .overlay {
-              opacity: 0.8;
-            }
-          }
+        h2 {
+          font-family: $font-family-cera;
+          font-weight: 900;
+          font-size: 48px;
+          line-height: 130%;
+          letter-spacing: 0.03em;
+          text-transform: capitalize;
+          color: #242424;
         }
-        .item2 {
-          position: relative;
-          width: 301px;
-          height: 450px;
-          background-image: url(../../images/index/kimchi.png);
-          background-size: cover;
-          background-repeat: no-repeat;
-          transition: 0.5s;
-          &:hover {
-            .overlay {
-              opacity: 0.8;
-            }
-          }
+        p {
+          font-family: $font-family-opensans;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 175%;
+          letter-spacing: 0.04em;
+          color: #aaaaaa;
+          padding: 24px 0;
         }
-        .item3 {
-          position: relative;
-          width: 301px;
-          height: 450px;
-          background-image: url(../../images/index/download.jpg);
-          background-size: cover;
-          background-repeat: no-repeat;
-          transition: 0.5s;
+        a {
+          @include btn;
+          padding: 8px 32px;
+          font-weight: 700;
           &:hover {
-            .overlay {
-              opacity: 0.8;
-            }
+            color: white;
+            background-color: $color;
           }
         }
       }
-      .owl-theme .owl-dots {
-        display: none;
-      }
-      .owl-theme .owl-nav {
-        display: none;
-      }
+      .gallery_right {
+        overflow-x: hidden;
+        .owl-carousel {
+          width: 1200px;
+          // gap: 20px;
+        }
+        .owl-theme {
+          .item1 {
+            position: relative;
+            width: 301px;
+            height: 450px;
+            background-image: url(../../images/index/egg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
 
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        opacity: 0;
-        img {
-          width: 43px;
-          height: 43px;
+            &:hover {
+              .overlay {
+                transition: 0.5s;
+                opacity: 0.8;
+              }
+            }
+          }
+          .item2 {
+            position: relative;
+            width: 301px;
+            height: 450px;
+            background-image: url(../../images/index/kimchi.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &:hover {
+              .overlay {
+                transition: 0.5s;
+                opacity: 0.8;
+              }
+            }
+          }
+          .item3 {
+            position: relative;
+            width: 301px;
+            height: 450px;
+            background-image: url(../../images/index/download.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &:hover {
+              .overlay {
+                transition: 0.5s;
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+        .owl-theme .owl-dots {
+          display: none;
+        }
+        .owl-theme .owl-nav {
+          display: none;
+        }
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          opacity: 0;
+          img {
+            width: 43px;
+            height: 43px;
+          }
         }
       }
-    }
     }
   }
 }

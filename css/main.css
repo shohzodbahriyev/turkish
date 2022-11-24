@@ -621,10 +621,17 @@
   border: 1px solid rgba(36, 36, 36, 0.1);
   border-radius: 14px;
 }
+#main #ourmenu .menu .meals:hover {
+  box-shadow: 0 2px 5px 4px rgb(161, 149, 218);
+}
 #main #ourmenu .menu .meals .card_body img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.5s;
+}
+#main #ourmenu .menu .meals .card_body img:hover {
+  transform: scale(0.5);
 }
 #main #ourmenu .menu .meals .card_body p {
   font-family: "Open Sans", sans-serif;
@@ -898,9 +905,9 @@
   background-image: url(../../images/index/egg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  transition: 0.5s;
 }
 #main .gallery .row .gallery_right .owl-theme .item1:hover .overlay {
+  transition: 0.5s;
   opacity: 0.8;
 }
 #main .gallery .row .gallery_right .owl-theme .item2 {
@@ -910,9 +917,9 @@
   background-image: url(../../images/index/kimchi.png);
   background-size: cover;
   background-repeat: no-repeat;
-  transition: 0.5s;
 }
 #main .gallery .row .gallery_right .owl-theme .item2:hover .overlay {
+  transition: 0.5s;
   opacity: 0.8;
 }
 #main .gallery .row .gallery_right .owl-theme .item3 {
@@ -922,9 +929,9 @@
   background-image: url(../../images/index/download.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  transition: 0.5s;
 }
 #main .gallery .row .gallery_right .owl-theme .item3:hover .overlay {
+  transition: 0.5s;
   opacity: 0.8;
 }
 #main .gallery .row .gallery_right .owl-theme .owl-dots {
