@@ -50,3 +50,7 @@ function opanNavbar(){
 function opanNavbar() {
   document.getElementById("offcanvasDarkNavbar").style.left = "-100%";
 }
+
+AOS.init({
+  duration: 1200,
+});
