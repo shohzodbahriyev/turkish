@@ -385,17 +385,15 @@
 .backtop {
   width: 50px;
   height: 50px;
-  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   bottom: 15px;
   right: 15px;
-  background-color: cadetblue;
+  background-color: #BB2339;
   border-radius: 50%;
-}
-.backtop:hover {
-  background-color: rgb(22, 21, 21);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 .backtop a {
   color: white;
